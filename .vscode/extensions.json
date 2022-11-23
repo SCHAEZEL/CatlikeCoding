@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "leo-labs.dotnet"
+        "leo-labs.dotnet",
+        "unity.unity-debug",
+        "franneck94.c-cpp-runner"
     ]
 }
