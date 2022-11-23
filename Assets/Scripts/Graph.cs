@@ -24,6 +24,10 @@ public class Graph : MonoBehaviour
         DrawGraph(resolution);
     }
 
+    /// <summary>
+    /// 画图
+    /// </summary>
+    /// <param name="res"></param>
     private void DrawGraph(int res)
     {
         FillThePool(res);
@@ -44,7 +48,10 @@ public class Graph : MonoBehaviour
         }
     }
 
-    // 填满对象池
+    /// <summary>
+    /// 填满对象池
+    /// </summary>
+    /// <param name="num">所需要的对象数量</param>
     private void FillThePool(int num)
     {
         var poolCount = pointPool.Count;
@@ -60,6 +67,11 @@ public class Graph : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 清空图像
+    /// TODO:暂时没好方法隐藏Transform，直接将Transform挪到外边
+    /// 后续尝试采用GameObject Pool
+    /// </summary>
     private void ClearGraph()
     {
         foreach (Transform point in pointPool)
